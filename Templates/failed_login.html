@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wrong Credentials</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .error-box {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+    }
+    h1 {
+      color: #e74c3c;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #3498db;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-box">
+    <h1>❌ Wrong Credentials</h1>
+    <p>Please contact the admin for assistance.</p>
+    <button onclick="window.history.back()">Go Back</button>
+  </div>
+</body>
+</html>
