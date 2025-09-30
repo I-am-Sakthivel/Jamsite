@@ -2,7 +2,7 @@ from flask import Flask,request,render_template,redirect
 from dotenv import load_dotenv
 import os
 load_dotenv()
-app=Flask(__name__)
+app=Flask(__name__,template_folder='Templates')
 @app.route("/",methods=['GET','POST'])
 def login():
     if request.method == "POST":
@@ -21,4 +21,5 @@ def ind():
 
 
 if __name__ == '__main__':
+
     app.run()
